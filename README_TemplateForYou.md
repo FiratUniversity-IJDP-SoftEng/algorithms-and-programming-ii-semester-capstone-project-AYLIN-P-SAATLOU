@@ -239,9 +239,13 @@ python -m unittest test_algorithm.py
 
 ### Test Cases
 
-- [Test case 1 description]
-- [Test case 2 description]
-- [Test case 3 description]
+- Initialization: Correct setup of the Bloom Filter's size, hash count, and initial empty bit array.
+- Add Operations: Verifying that adding items correctly sets bits, including handling duplicate additions.
+- Check Operations (True Positives): Ensuring that items known to be added are correctly identified as "probably present".
+- Check Operations (True Negatives): Verifying that items not added are correctly identified as "definitely not present", including checks on an empty filter.
+- False Positive Probability: Testing the accuracy and behavior of the false_positive_probability calculation.
+- Optimal Hash Count: Verifying the static method for calculating the optimal number of hash functions.
+- Edge Cases: Testing scenarios that might lead to specific behaviors, such as the possibility of false positives under high load.
 
 ## Live Demo
 
@@ -251,35 +255,36 @@ A live demo of this application is available at: [Insert Streamlit Cloud URL her
 
 ### Current Limitations
 
-- [Limitation 1]
-- [Limitation 2]
-- [Limitation 3]
+- Fixed Hash Functions: Currently uses MurmurHash3, but doesn't allow user selection of other hash algorithms.
+- No Deletion: Bloom Filters fundamentally do not support element deletion without re-creating the entire filter, which is a known limitation of the algorithm.
+- Simple Visualization: The bit array visualization is basic; it could be enhanced with animations or more interactive elements.
+- String-Only Elements: The current implementation primarily handles string inputs; extending it to other data types would require careful handling of hashing.
 
 ### Planned Improvements
 
-- [Improvement 1]
-- [Improvement 2]
-- [Improvement 3]
+- Advanced Visualization: Incorporate animations for bit-setting and checking, or allow highlighting specific bit changes.
+- Comparison Mode: Enable comparison between different Bloom Filter configurations or against other data structures.
+- Performance Benchmarking: Add features to test insertion/check speed with large datasets.
+- Predictive Analytics: Show how changing m or k would ideally affect the false positive rate based on the expected number of insertions.
+- Error Handling: More robust error handling for invalid user inputs (e.g., empty strings).
 
 ## References and Resources
 
 ### Academic References
 
-1. [Reference 1]
-2. [Reference 2]
-3. [Reference 3]
+1. Bloom, B. H. (1970). Space/time trade-offs in hash coding with allowable errors. Communications of the ACM, 13(7), 422-426.
 
 ### Online Resources
 
-- [Resource 1]
-- [Resource 2]
-- [Resource 3]
+- Wikipedia - Bloom Filter: https://en.wikipedia.org/wiki/Bloom_filter
+- Stack Overflow: Various discussions on Bloom Filter implementations and properties.
+- Real Python: Tutorials on data structures in Python (general reference).
 
 ## Author
 
-- **Name:** [Your Name]
-- **Student ID:** [Your Student ID]
-- **GitHub:** [Your GitHub Username]
+- **Name:** AYLIN POURMOHAMMAD SAATLOU
+- **Student ID:** 240543604
+- **GitHub:** AYLIN-P-SAATLOU
 
 ## Acknowledgements
 
