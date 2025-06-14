@@ -14,7 +14,21 @@ The Bloom Filter solves the problem of efficiently checking for the probable mem
 
 ### Mathematical Background
 
-[Explain any mathematical concepts, formulas, or notation relevant to understanding the algorithm]
+A Bloom Filter uses a bit array of m bits, all initially set to 0. To add or check an element, k independent hash functions are used. Each hash function maps an element to an index within the bit array.
+
+Optimal Number of Hash Functions (k): For a given bit array size (m) and expected number of inserted items (n), the optimal number of hash functions to minimize false positive probability is given by:
+k=
+fracmn
+cdot
+ln(2)
+
+False Positive Probability (P_f): The probability of a false positive (an item being reported as present when it's not) for a Bloom Filter with m bits, k hash functions, and n inserted items is approximately:
+P_f
+approx
+left(1−e 
+frac−kcdotnm
+ 
+right)^k
 
 ### Algorithm Steps
 
