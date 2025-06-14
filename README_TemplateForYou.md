@@ -1,8 +1,8 @@
-# [Your Algorithm Name] - Interactive Visualization
+# Bloom Filter - Interactive Visualization
 
 ## Project Overview
 
-This project is an interactive web application that implements and visualizes [Algorithm Name], developed as part of the Algorithms and Programming II course at Fırat University, Software Engineering Department.
+This project is an interactive web application that implements and visualizes Bloom Filter, developed as part of the Algorithms and Programming II course at Fırat University, Software Engineering Department.
 
 ## Algorithm Description
 
@@ -10,7 +10,7 @@ This project is an interactive web application that implements and visualizes [A
 
 ### Problem Definition
 
-[Clearly define the problem that the algorithm solves]
+The Bloom Filter solves the problem of efficiently checking for the probable membership of an element in a set. It's a probabilistic data structure that can tell you with certainty if an element is not in a set, or if it might be in the set (with a chance of false positives). It's highly space-efficient, making it suitable for scenarios where memory is a constraint and a small rate of false positives is acceptable, such as spell checkers, caching mechanisms, or distributed databases.
 
 ### Mathematical Background
 
