@@ -1,5 +1,5 @@
 # Bloom Filter - Interactive Visualization
-##(Screenshots-Live Demo link-
+##(Screenshots-Live Demo link)
 ## Project Overview
 
 This project is an interactive web application that implements and visualizes the Bloom Filter, developed as part of the Algorithms and Programming II course at Fırat University, Software Engineering Department.
