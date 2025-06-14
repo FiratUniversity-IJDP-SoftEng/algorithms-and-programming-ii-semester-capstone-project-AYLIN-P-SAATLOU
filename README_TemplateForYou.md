@@ -1,12 +1,12 @@
 # Bloom Filter - Interactive Visualization
-
+##(Screenshots-Live Demo link-
 ## Project Overview
 
 This project is an interactive web application that implements and visualizes the Bloom Filter, developed as part of the Algorithms and Programming II course at Fırat University, Software Engineering Department.
 
 ## Algorithm Description
 
-[Provide a comprehensive explanation of your algorithm here. Include the following elements:]
+The Bloom Filter is a memory-efficient data structure for quickly checking if an item might be in a set. When an item is added, its value is hashed k times to set k specific bits in a large bit array to 1. To check for an item, the same k bits are inspected; if all are 1, the item is probably in the set (with a chance of false positives), but if any bit is 0, it is definitely not present.
 
 ### Problem Definition
 
@@ -31,10 +31,16 @@ right)^k
 
 ### Algorithm Steps
 
-1. [Step 1 with explanation]
-2. [Step 2 with explanation]
-3. [Step 3 with explanation]
-...
+Add Operation
+- Step 1: Hash Generation - For the item to be added, k different hash functions are applied.
+- Step 2: Index Mapping - Each of the k hash values is mapped to a specific index within the Bloom Filter's bit array (ranging from 0 to m-1).
+- Step 3: Bit Setting - The bits at all k calculated indices in the bit array are set to 1. If a bit is already 1, it remains 1.
+
+Check Operation
+- Step 1: Hash Generation - For the item to be checked, the same k hash functions are applied to generate k indices, identical to how it's done during the add operation.
+- Step 2: Bit Inspection - The bits at each of these k calculated indices in the bit array are examined.
+- Step 3: Decision - Definitively Not Present - If even one of the bits at these k indices is found to be 0, the item is definitely not in the filter. The check stops here.
+- Step 4: Decision - Probably Present - If all k bits at these indices are found to be 1, the item is probably in the filter. It's important to note this could be a false positive.
 
 ### Pseudocode
 
@@ -288,7 +294,7 @@ A live demo of this application is available at: [Insert Streamlit Cloud URL her
 
 ## Acknowledgements
 
-I would like to thank Assoc. Prof. Ferhat UÇAR for guidance throughout this project, and [any other acknowledgements].
+I would like to thank Assoc. Prof. Ferhat UÇAR for guidance throughout this project.
 
 ---
 
