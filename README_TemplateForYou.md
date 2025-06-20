@@ -116,7 +116,7 @@ Comprehensive Unit Tests: Automated test suite verifying the correctness of the 
 
 ## Screenshots
 
-the-main-interface.jpg
+
 file:///Users/aylin/Desktop/the-main-interface.jpg
 
 *Main Interface*  
@@ -125,8 +125,8 @@ file:///Users/aylin/Desktop/the-main-interface.jpg
 - *Bottom*: Empty bit array visualization (all bits unset)  
 - *Metrics panel*: Shows initial state (0% FP rate, 0/100 bits used)
 
-the-main-interface2.jpg
-file:///Users/aylin/Desktop/the-main-interface2.jpg
+
+file:///Users/aylin/Desktop/the-main-interface2.png
 
 *Configuration Panel & Metrics*  
 - *Sliders*: Adjust bit array size (10-1000) and hash functions (1-10)  
