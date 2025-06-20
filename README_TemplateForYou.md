@@ -116,15 +116,13 @@ Comprehensive Unit Tests: Automated test suite verifying the correctness of the 
 
 ## Screenshots
 
-
-file:///Users/aylin/Desktop/the-main-interface.jpg
+file:///Users/aylin/Desktop/the-main-interface.png
 
 *Main Interface*  
 - *Top*: Configure filter size (m) and hash functions (k)  
 - *Middle*: Add elements or check membership  
 - *Bottom*: Empty bit array visualization (all bits unset)  
 - *Metrics panel*: Shows initial state (0% FP rate, 0/100 bits used)
-
 
 file:///Users/aylin/Desktop/the-main-interface2.png
 
@@ -133,8 +131,21 @@ file:///Users/aylin/Desktop/the-main-interface2.png
 - *Live metrics*: Tracks false positive probability, bits set, and load factor  
 - *Clean state*: No elements added (0.00% FP rate, all bits unset)  
 
-![Algorithm in Action](docs/screenshots/algorithm_demo.png)
-*Caption describing the algorithm in action*
+file:///Users/aylin/Desktop/the-algorithm-in-action.png
+
+*True Positive Verification*  
+- Added elements: "apple", "banana"  
+- Checking "apple" → ✅ Present (True Positive)  
+- Bit array shows set bits from hash collisions  
+- Current metrics: 40/100 bits set (Load Factor: 0.18)
+
+file:///Users/aylin/Desktop/the-algorithm-in-action%202.png
+ 
+- Configuration: 100-bit array, 3 hash functions  
+- 7.26% FP probability with current load (40 bits set)  
+- Visualized bit array density demonstrates collision risk  
+- Ready for false positive test by checking non-added elements  
+
 
 ## Installation
 
