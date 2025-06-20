@@ -280,7 +280,7 @@ python -m unittest test_algorithm.py
 
 ## Live Demo
 
-A live demo of this application is available at: [Insert Streamlit Cloud URL here]
+A live demo of this application is available at: http://localhost:8501/
 
 ## Limitations and Future Improvements
 
