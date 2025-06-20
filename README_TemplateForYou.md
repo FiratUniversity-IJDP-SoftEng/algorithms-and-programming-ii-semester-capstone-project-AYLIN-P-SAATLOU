@@ -1,5 +1,5 @@
 # Bloom Filter - Interactive Visualization
-##(Screenshots-Live Demo link)
+
 ## Project Overview
 
 This project is an interactive web application that implements and visualizes the Bloom Filter, developed as part of the Algorithms and Programming II course at Fırat University, Software Engineering Department.
@@ -116,8 +116,22 @@ Comprehensive Unit Tests: Automated test suite verifying the correctness of the 
 
 ## Screenshots
 
-![Main Interface](docs/screenshots/main_interface.png)
-*Caption describing the main interface*
+the-main-interface.jpg
+file:///Users/aylin/Desktop/the-main-interface.jpg
+
+*Main Interface*  
+- *Top*: Configure filter size (m) and hash functions (k)  
+- *Middle*: Add elements or check membership  
+- *Bottom*: Empty bit array visualization (all bits unset)  
+- *Metrics panel*: Shows initial state (0% FP rate, 0/100 bits used)
+
+the-main-interface2.jpg
+file:///Users/aylin/Desktop/the-main-interface2.jpg
+
+*Configuration Panel & Metrics*  
+- *Sliders*: Adjust bit array size (10-1000) and hash functions (1-10)  
+- *Live metrics*: Tracks false positive probability, bits set, and load factor  
+- *Clean state*: No elements added (0.00% FP rate, all bits unset)  
 
 ![Algorithm in Action](docs/screenshots/algorithm_demo.png)
 *Caption describing the algorithm in action*
